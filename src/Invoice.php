@@ -28,7 +28,7 @@ class Invoice
     use SavesFiles;
     use SerialNumberFormatter;
 
-    public const TABLE_COLUMNS = 4;
+    public const TABLE_COLUMNS = 3;
 
     /**
      * @var string

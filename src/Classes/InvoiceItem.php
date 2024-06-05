@@ -61,6 +61,26 @@ class InvoiceItem
     public $tax_percentage;
 
     /**
+     * @var string
+     */
+    public $formatted_price_per_unit;
+
+    /**
+     * @var string
+     */
+    public $formatted_sub_total_price;
+
+    /**
+     * @var string
+     */
+    public $formatted_discount;
+
+    /**
+     * @var string
+     */
+    public $formatted_tax;
+
+    /**
      * InvoiceItem constructor.
      */
     public function __construct()
@@ -68,6 +88,34 @@ class InvoiceItem
         $this->quantity = 1.0;
         $this->discount = 0.0;
         $this->tax      = 0.0;
+    }
+
+    public function formattedPricePerUnit($formatted_price_per_unit)
+    {
+        $this->formatted_price_per_unit = $formatted_price_per_unit;
+
+        return $this;
+    }
+
+    public function formattedSubTotalPrice($formatted_sub_total_price)
+    {
+        $this->formatted_sub_total_price = $formatted_sub_total_price;
+
+        return $this;
+    }
+
+    public function formattedDiscount($formatted_discount)
+    {
+        $this->formatted_discount = $formatted_discount;
+
+        return $this;
+    }
+
+    public function formattedTax($formatted_tax)
+    {
+        $this->formatted_tax = $formatted_tax;
+
+        return $this;
     }
 
     public static function make($title)

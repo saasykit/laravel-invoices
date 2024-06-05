@@ -86,6 +86,11 @@ class Invoice
     public $total_discount;
 
     /**
+     * @var string
+     */
+    public $formatted_total_discount;
+
+    /**
      * @var float
      */
     public $tax_rate;
@@ -106,9 +111,19 @@ class Invoice
     public $total_taxes;
 
     /**
+     * @var string
+     */
+    public $formatted_total_taxes;
+
+    /**
      * @var float
      */
     public $total_amount;
+
+    /**
+     * @var string
+     */
+    public $formatted_total_amount;
 
     /**
      * @var bool

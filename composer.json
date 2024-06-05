@@ -1,6 +1,6 @@
 {
-    "name": "laraveldaily/laravel-invoices",
-    "description": "Missing invoices for Laravel",
+    "name": "saasykit/laravel-invoices",
+    "description": "Generate PDF invoices in Laravel",
     "license": "GPL-3.0-only",
     "authors": [
         {
@@ -10,7 +10,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/LaravelDaily/laravel-invoices",
+    "homepage": "https://github.com/saasykit/laravel-invoices",
     "keywords": ["Laravel", "Invoice", "Invoices", "PDF"],
     "require": {
         "php": ">=8.2",

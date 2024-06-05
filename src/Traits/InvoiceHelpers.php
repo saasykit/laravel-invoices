@@ -23,6 +23,21 @@ trait InvoiceHelpers
         return $this;
     }
 
+    public function formattedTotalDiscount()
+    {
+        return $this->formatted_total_discount;
+    }
+
+    public function formattedTotalTaxes()
+    {
+        return $this->formatted_total_taxes;
+    }
+
+    public function formattedTotalAmount()
+    {
+        return $this->formatted_total_amount;
+    }
+
     /**
      * @return $this
      */

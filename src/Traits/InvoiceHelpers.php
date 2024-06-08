@@ -340,7 +340,6 @@ trait InvoiceHelpers
     protected function beforeRender(): void
     {
         $this->validate();
-        $this->calculate();
     }
 
     /**

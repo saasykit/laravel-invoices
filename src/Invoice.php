@@ -113,7 +113,7 @@ class Invoice
     /**
      * @var string
      */
-    public $formatted_total_taxes;
+    public $formatted_total_taxes = '';
 
     /**
      * @var float
